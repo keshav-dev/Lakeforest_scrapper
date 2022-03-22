@@ -11,8 +11,19 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "prettier": "^2.6.0",
     "puppeteer": "^5.5.0",
     "random-useragent": "^0.5.0"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^19.0.4",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.7",
+    "prettier": "^2.6.0"
   }
 }
